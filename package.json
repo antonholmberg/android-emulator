@@ -1,0 +1,24 @@
+{
+  "name": "android-emulator",
+  "version": "1.0.0",
+  "description": "Used to launch the android emulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "android-emulator": "index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "execa": "^1.0.0",
+    "inquirer": "^6.2.2",
+    "listr": "^0.14.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
