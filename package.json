@@ -11,6 +11,7 @@
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/540Grunkspin/android-emulator",
   "dependencies": {
     "execa": "^1.0.0",
     "inquirer": "^6.2.2",
