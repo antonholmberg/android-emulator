@@ -1,14 +1,15 @@
 const execa = require('execa');
 const path = require('path');
 
-const hasSdkPath = () => !!process.env.ANDROID_SDK;
+const getAndroidHome = () => process.env.ANDROID_HOME || process.env.ANDROID_SDK;
+const hasSdkPath = () => !!getAndroidHome();
 
-const getEmulatorDir = () => path.join(process.env.ANDROID_SDK, 'emulator');
+const getEmulatorDir = () => path.join(getAndroidHome(), 'emulator');
 
 const getExtendedPath = () => {
-  const platformTools = path.join(process.env.ANDROID_SDK, 'platform-tools');
+  const platformTools = path.join(getAndroidHome(), 'platform-tools');
   const emulator = getEmulatorDir();
-  const tools = path.join(process.env.ANDROID_SDK, 'tools');
+  const tools = path.join(getAndroidHome(), 'tools');
   return `${process.env.PATH}:${tools}:${emulator}:${platformTools}`;
 };
 
