@@ -14,7 +14,6 @@ const getExtendedPath = () => {
 };
 
 const listEmulators = async () => {
-  console.log(getExtendedPath());
   const { stdout } = await execa('emulator', ['-list-avds'], {
     env: { PATH: getExtendedPath() },
   });
