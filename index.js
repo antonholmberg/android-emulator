@@ -6,7 +6,6 @@ if (!hasSdkPath()) {
   console.error('Make sure that the ANDROID_SDK environment variable is set');
 }
 
-
 listEmulators()
   .then(avds => inquirer.prompt([
     {
