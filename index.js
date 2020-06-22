@@ -8,7 +8,6 @@ if (!hasSdkPath()) {
 
 listEmulators()
   .then((avds) => {
-    console.log('avds: ', avds);
     if (avds && avds.length > 0) {
       startEmulator(avds[0]);
     }

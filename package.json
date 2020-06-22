@@ -1,7 +1,7 @@
 {
   "name": "android-emulator",
   "repository": "https://github.com/antonholmberg/android-emulator",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Use to launch the android emulator",
   "main": "index.js",
   "scripts": {
