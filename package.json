@@ -10,7 +10,7 @@
   "bin": {
     "android-emulator": "index.js"
   },
-  "author": "",
+  "author": "Stefano Fiorini",
   "license": "ISC",
   "homepage": "https://github.com/sfiorini/android-emulator",
   "dependencies": {
