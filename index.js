@@ -7,18 +7,11 @@ if (!hasSdkPath()) {
 }
 
 listEmulators()
-  .then(avds => inquirer.prompt([
-    {
-      type: 'list',
-      message: 'What emulator should start',
-      name: 'avd',
-      choices: avds,
-    },
-  ]))
-  .then((answered) => {
-    console.log('🚀 Emulator is starting up...');
-    startEmulator(answered.avd);
-    process.exit();
+  .then((avds) => {
+    console.log('avds: ', avds);
+    if (avds && avds.length > 0) {
+      startEmulator(avds[0]);
+    }
   })
   .catch((err) => {
     console.error(err);

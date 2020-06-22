@@ -5,7 +5,7 @@
   "description": "Use to launch the android emulator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./index.js"
   },
   "bin": {
     "android-emulator": "index.js"
