@@ -11,6 +11,8 @@ listEmulators()
     if (avds && avds.length > 0) {
       startEmulator(avds[0]);
     }
+    console.log('Hello');
+    process.exit(0);
   })
   .catch((err) => {
     console.error(err);
